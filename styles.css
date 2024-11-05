@@ -1,0 +1,300 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d2f36;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f4a261;
+}
+
+/* CTA Buttons */
+.cta-buttons .btn-primary,
+.cta-buttons .btn-secondary {
+    background-color: #f4a261;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-buttons .btn-primary:hover,
+.cta-buttons .btn-secondary:hover {
+    background-color: #e76f51;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-text {
+    z-index: 2;
+    max-width: 700px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Keyframes for Hero Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Mission Statement */
+#mission {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#mission h2 {
+    font-size: 2.4em;
+    color: #2a9d8f;
+    margin-bottom: 15px;
+}
+
+/* Adopt-a-Cow Section */
+#adopt-a-cow {
+    padding: 50px 20px;
+    background-color: #e9c46a;
+    text-align: center;
+}
+
+#adopt-a-cow h2 {
+    font-size: 2em;
+    color: #2d2f36;
+    margin-bottom: 10px;
+}
+
+#adopt-a-cow .btn-primary {
+    margin-top: 15px;
+}
+
+/* Event Highlights Carousel */
+#events-carousel {
+    padding: 50px 20px;
+    background-color: #264653;
+    color: #fff;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.carousel-slide {
+    min-width: 300px;
+    background-color: #2a9d8f;
+    border-radius: 10px;
+    padding: 20px;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.carousel-slide:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    background-color: #2d2f36;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Donation Tracker */
+#donation-tracker {
+    padding: 50px 20px;
+    background-color: #e76f51;
+    color: #fff;
+    text-align: center;
+}
+
+#donation-tracker p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #2d2f36;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f4a261;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #f4a261;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #e76f51;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-secondary {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gau Shala Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+    background-color: #e9f5ff;
+}
+
+/* Services Section */
+#services {
+    background-color: #fff3e0;
+}
+
+.service-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Donations Section */
+#donations {
+    background-color: #e8f5e9;
+}
+
+/* Events Section */
+#events {
+    background-color: #fffde7;
+}
+
+/* Live Gallery Section */
+#live-gallery {
+    background-color: #fce4ec;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e3f2fd;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Map Styles */
+#map {
+    margin-top: 20px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="header-container">
+        <img src="logo.png" alt="Gau Shala Logo" class="logo">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#donations">Donations</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta-buttons">
+            <a href="#donate" class="btn-primary">Donate Now</a>
+            <a href="#adopt-a-cow" class="btn-secondary">Adopt a Cow</a>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-background">
+        <div class="hero-text">
+            <h1>Welcome to Gau Shala</h1>
+            <p>Support and care for the cows of our community</p>
+            <a href="#donate" class="btn-primary">Donate Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Statement Section -->
+<section id="mission">
+    <div class="mission-container">
+        <h2>Our Mission</h2>
+        <p>Providing love, care, and support to every cow in need.</p>
+    </div>
+</section>
+
+<!-- Adopt-a-Cow Program Section -->
+<section id="adopt-a-cow">
+    <h2>Adopt a Cow Program</h2>
+    <p>Support a cow and contribute to its well-being.</p>
+    <a href="#donate" class="btn-primary">Sponsor Now</a>
+</section>
+
+<!-- Event Highlights Carousel -->
+<section id="events-carousel">
+    <h2>Upcoming Events</h2>
+    <div class="carousel">
+        <!-- Each slide can be populated dynamically with event info -->
+        <div class="carousel-slide">Event 1</div>
+        <div class="carousel-slide">Event 2</div>
+        <div class="carousel-slide">Event 3</div>
+    </div>
+</section>
+
+<!-- Live Project Gallery -->
+<section id="gallery">
+    <h2>Live Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">Image 1</div>
+        <div class="gallery-item">Image 2</div>
+        <div class="gallery-item">Image 3</div>
+    </div>
+</section>
+
+<!-- Donation Tracker -->
+<section id="donation-tracker">
+    <h2>Donation Tracker</h2>
+    <p>Total Donations: $<span id="donation-amount">0</span></p>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="contact-info">
+            <p>Contact us at: info@gaushala.org</p>
+            <p>Follow us:</p>
+            <div class="social-links">
+                <!-- Social media icons/links here -->
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form action="#">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<!-- Additional Pages -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Learn about our Gau Shala's history, mission, and facilities.</p>
+    <!-- Add more content as per the structure described -->
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-item">Service 1: Description</div>
+    <div class="service-item">Service 2: Description</div>
+</section>
+
+<section id="donations">
+    <h2>Donate to Gau Shala</h2>
+    <p>Choose a donation method that suits you best.</p>
+    <!-- Donation form, options, and certificate generation would go here -->
+</section>
+
+<section id="events">
+    <h2>Events</h2>
+    <div class="events-calendar">
+        <!-- Interactive calendar for events -->
+    </div>
+</section>
+
+<section id="live-gallery">
+    <h2>Image and Video Gallery</h2>
+    <!-- Categories for different content and embedded social media feeds -->
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="post" class="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="map">
+        <!-- Embed Google Maps iframe here -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.8712371932456!2d73.9599883739831!3d20.178050016455483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdddb3fdac9b94f%3A0x7757e0632de13de0!2sShree%20Ujjwal%20gourakshan%20Sanstha%20chinchakhed%20khed%20Road%20Pimpalgaon%20baswant%20pin%20code%20no.422209%20Ta%20Nifad%20Dist%20Nashik!5e1!3m2!1sen!2sin!4v1730696856929!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+</body>
+</html>
+
