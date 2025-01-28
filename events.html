@@ -72,8 +72,8 @@
         <div class="card shadow-sm hover-card">
           <div class="card-body">
             <h5 class="card-title text-center text-secondary">Filter Events</h5>
-            <form>
-              <div class="form-group">
+            <form class="d-flex">
+              <div class="form-group col-md-6">
                 <label for="eventType">Event Type</label>
                 <select id="eventType" class="form-control">
                   <option>All Events</option>
@@ -82,7 +82,7 @@
                   <option>Community Gatherings</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-6">
                 <label for="timeFrame">Timeframe</label>
                 <select id="timeFrame" class="form-control">
                   <option>This Week</option>
@@ -90,14 +90,38 @@
                   <option>Upcoming Events</option>
                 </select>
               </div>
-              <button type="button" class="btn btn-primary btn-block mt-3" id="applyFilters">Apply Filters</button>
             </form>
+            <button type="button" class="btn btn-primary btn-block mt-3 w-100" id="applyFilters">Apply Filters</button>
+            </div>
           </div>
-        </div>
+
+          <div class="col-md-12 mt-4">
+            <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-center text-secondary">List of Events</h5>
+              <ul class="list-group">
+              <li class="list-group-item">Event 1: Description of event 1</li>
+              <li class="list-group-item">Event 2: Description of event 2</li>
+              <li class="list-group-item">Event 3: Description of event 3</li>
+              <li class="list-group-item">Event 4: Description of event 4</li>
+              <!-- <li class="list-group-item">Event 5: Description of event 5</li> -->
+              </ul>
+            </div>
+            </div>
+          </div>
+        
+
       </div>
     </div>
   </div>
+  
+  
+
+
 </section>
+
+
+
 <section class="side-social">
   <div class="social-card">
     <ul>
@@ -219,7 +243,7 @@
       
               <!-- Image/GIF Section -->
               <div class="col-md-4">
-                <img src="./img/img1.jpg" class="img-fluid h-100" alt="Event Image">
+                <img src="./img/cow_with_there_baby_sitting_in_goushala.jpeg    " class="img-fluid h-100" alt="Event Image">
                 <!-- Alternatively, add a GIF with this format:
                 <img src="./img/your-image.gif" class="img-fluid h-100" alt="Event GIF"> -->
               </div>

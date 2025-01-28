@@ -145,7 +145,7 @@ header {
 
 /* Footer */
 footer {
-  background-image: url(./img/pixelcut-export.jpeg);
+  /* background-image: url(./img/pixelcut-export.jpeg); */
   background-size: cover;
   display: flex;
   justify-content: space-between;
