@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Error - Could Not Connect</title>
+    <title>Server Error - Could Not Connect</title>
     <style>
         * {
             margin: 0;
@@ -26,50 +25,61 @@
 
         .container {
             max-width: 600px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
         h1 {
-            font-size: 100px;
+            font-size: 80px;
             margin-bottom: 10px;
             color: #ff4c4c;
         }
 
         h2 {
             font-size: 24px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            color: #444;
         }
 
         p {
             font-size: 18px;
             color: #666;
+            margin-bottom: 20px;
         }
 
         .btn {
             display: inline-block;
-            margin-top: 20px;
             padding: 10px 20px;
             background-color: #ff4c4c;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             font-size: 16px;
+            transition: background 0.3s;
         }
 
         .btn:hover {
-            background-color: #ff3333;
+            background-color: #e63939;
+        }
+
+        .icon {
+            font-size: 50px;
+            color: #ff4c4c;
+            margin-bottom: 15px;
         }
     </style>
 </head>
-
 <body>
 
-    <div class="container">
-        <h1>404</h1>
-        <h2>We could not connect to the server</h2>
-        <p>It seems the page you are looking for is not available or the server is unreachable at the moment.</p>
-        <a href="/" class="btn">Get a help</a>
-    </div>
+<div class="container">
+    <div class="icon">⚠️</div>
+    <h1>Server Error</h1>
+    <h2>We are having trouble connecting to the server.</h2>
+    <p>There may be a temporary issue with the server. Please try again later or contact support if the problem persists.</p>
+    <a href="/" class="btn">Go to Home</a>
+</div>
 
 </body>
-
 </html>
